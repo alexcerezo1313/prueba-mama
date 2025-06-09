@@ -71,7 +71,9 @@ if st.button("Reservar cita"):
             'email': email,
             'timestamp': datetime.now()
         }
-        reservas = reservas.append(nueva, ignore_index=True)
+        # Añadir nueva reserva y guardar
+        nueva_df = pd.DataFrame([nueva])
+        reservas = pd.concat([reservas, nueva_df], ignore_index=True)
         reservas.to_csv(ARCHIVO_RESERVAS, index=False)
         st.success(f"Cita reservada para el {fecha_seleccionada.strftime('%d/%m/%Y')} a las {horario}.")
         st.balloons()
