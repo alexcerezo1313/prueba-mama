@@ -19,7 +19,7 @@ ARCHIVO_RESERVAS = 'bookings.csv'
 # Sustituye las credenciales por tus datos reales
 destinatario_admin = 'acerezoporta@gmail.com'
 email_user = 'acerezoporta@gmail.com'      # Cuenta desde la que se envía el email
-email_pass = 'GruasLiebherr13'      # Contraseña o app password
+email_pass = 'GruasLiebherr13!'      # Contraseña o app password
 
 # Función para enviar correo electrónico
 def send_email(subject: str, body: str, to: str):
