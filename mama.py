@@ -46,7 +46,7 @@ st.title("Reserva tu cita")
 ohoy = date.today()
 fecha_seleccionada = st.date_input(
     "Selecciona la fecha (lunes a viernes)",
-    min_value=ho
+    min_value=ohoy
 )
 
 # Validar día de la semana
